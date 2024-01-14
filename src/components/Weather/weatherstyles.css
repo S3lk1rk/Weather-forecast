@@ -1,0 +1,66 @@
+.weather-container {
+    background-color: #98dde8;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(152, 221, 232, 0.4);
+    padding: 20px;
+}
+
+.search-bar {
+    color: white;
+    background-color: rgba(152, 221, 232, 0.6);
+}
+
+/* This will target the input inside the search-bar if you applied the class on the TextField component */
+.search-bar .MuiInputBase-input {
+    color: white; /* Setting text color to white */
+}
+
+.grid-item {
+    margin-bottom: 20px;
+}
+
+.currentw {
+    background-color: #4F86C6;
+    color: white;
+}
+
+.weather-card, .day-card {
+    background-color: #98dde8;
+    padding: 20px;
+}
+
+
+
+.button-spacing {
+    margin-left: 10px; /* keep the left margin */
+}
+
+.temperature-button {
+    margin: 40px; /* This will add 40px of space around the buttons */
+}
+
+.error-text {
+    color: red;
+}
+
+.day-card {
+    background-color: #023f75;
+    color: white;
+}
+
+.day-card .MuiTypography-root {
+    color: white;
+}
+
+.dayotw {
+    background-color: #4F86C6;
+    color: white;
+}
+
+body {
+    background-image: url('../../../public/images/CloudedSky.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Open Sans', sans-serif;
+}

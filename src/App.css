@@ -1,5 +1,26 @@
 .App {
+  font-family: Arial, sans-serif;
   text-align: center;
+  margin: 40px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1em;
+  margin: 20px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+
+.title1 {
+  -webkit-text-stroke: 1px black; /* For WebKit browsers like Chrome and Safari */
+  text-stroke: 1px black; /* Standard syntax, though not all browsers support it yet */
+  font-weight: bold;
+  color: whitesmoke;
 }
 
 .App-logo {
