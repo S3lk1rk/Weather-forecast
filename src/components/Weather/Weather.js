@@ -11,7 +11,9 @@ function Weather() {
     const [currentWeather, setCurrentWeather] = useState(null);
     const [unit, setUnit] = useState('metric');
     const [error, setError] = useState("");
-
+    const toggleUnit = (newUnit) => {
+    setUnit(newUnit);
+};
     const search = async (e) => {
         if (e.key === "Enter") {
             setCurrentCity(query);
@@ -70,13 +72,23 @@ function Weather() {
             />
                 </Grid>
                 <Grid item xs={12}>
-                    <Button variant="contained" color="primary" onClick={() => setUnit('metric')} className="button-spacing temperature-button">
-                        Celsius
-                    </Button>
-                    <Button variant="contained" color="secondary" onClick={() => setUnit('imperial')} className="button-spacing temperature-button">
-                        Fahrenheit
-                    </Button>
-                </Grid>
+    <Button 
+        variant={unit === 'metric' ? "contained" : "outlined"}
+        color="primary" 
+        onClick={() => toggleUnit('metric')} 
+        className="temperature-button"
+    >
+        Celsius
+    </Button>
+    <Button 
+        variant={unit === 'imperial' ? "contained" : "outlined"}
+        color="secondary" 
+        onClick={() => toggleUnit('imperial')} 
+        className="temperature-button"
+    >
+        Fahrenheit
+    </Button>
+</Grid>
                 <Grid item xs={12}>
                     {error && <Typography className="error-text">{error}</Typography>}
                 </Grid>
